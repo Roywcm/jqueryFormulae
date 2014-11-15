@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Boilerplate</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src="../src/jquery.formulae.js"></script>
+		<link rel="stylesheet" type="text/css" href="../src/jquery.formulae.css"  media='all'/>
+	</head>
+	<body>
+		<script>
+			$(function() {
+				$("#formula").jqueryFormulae({
+					inputs: [
+						{
+							'name':'sensors',
+							'class': 'sensorselect',
+							'type':'select',
+							'values': {
+								1 : {'label':'sensor1', 'value': 100},
+								2 : {'label':'sensor2', 'value': 200},
+								3 : {'label':'sensor3', 'value': 300},
+								4 : {'label':'sensor4', 'value': 400}
+							} 
+						}
+					]
+				});
+
+				$('#test').submit(function(e){
+					e.preventDefault();
+					var data = $(this).serializeArray();
+					console.log(data);
+					var result = '';
+					$.each(data, function(index,formula){
+						result = result + formula['value'];
+					});
+					console.log(eval(result));
+				});
+			});
+		</script>
+
+		<form id="test">
+			<div id="formula"></div>
+			<button type="submit">bereken</button>
+		</form>
+		<pre></pre>
+	</body>
+</html>
