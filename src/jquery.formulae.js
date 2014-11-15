@@ -6,7 +6,7 @@
                 items: "li",
                 newMsg: "Selecteer actie",
                 removeicon: "glyphicon glyphicon-remove",
-                popoverPlacement: "auto top",
+                popoverPlacement: "auto bottom",
                 inputs: {},
                 defaultinputs: [
                     {
