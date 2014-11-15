@@ -56,6 +56,7 @@
             this.newlink = $("<a href=\"#\" class=\"btn btn-default\">" + this.options.newMsg + "</a>")
                     .popover({
                         html: true,
+                        placement: "auto",
                         content: this.addAction()
                     });
 
@@ -165,6 +166,7 @@
             mathinput = $("<input type=\"hidden\" name=\"math[formula]\">").val(this.options.math[0].value);
             mathlink.popover({
                 html: true,
+                placement: "auto",
                 content: this.operatorsHtml(mathlink, mathinput)
             });
             return wrapper.addClass("operator").html(mathlink).append(mathinput);
