@@ -6,6 +6,7 @@
                 items: "li",
                 newMsg: "Selecteer actie",
                 removeicon: "glyphicon glyphicon-remove",
+                inputs: {},
                 defaultinputs: [
                     {
                         "name": "custom",

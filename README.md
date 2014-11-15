@@ -26,13 +26,13 @@ Add this in your project
 Just ad a placeholder in your html like this:
 
 ```
-<div id="formulea"></div>
+<div id="formulae"></div>
 ```
 
 Add formulea with this code:
 
 ```
-$("#formula").jqueryFormulae();
+$("#formulae").jqueryFormulae();
 ```
 
 Options:
