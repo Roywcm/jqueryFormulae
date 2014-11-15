@@ -1,17 +1,17 @@
 .jqueryFormulae {
   padding: 0 0;
 }
-.jqueryFormulae li.formulea-item {
+.jqueryFormulae li.formulae-item {
   display: inline-block;
   width: 150px;
   margin: 5px 10px;
   vertical-align: top;
 }
-.jqueryFormulae li.formulea-item.operator {
+.jqueryFormulae li.formulae-item.operator {
   width: auto;
   border-radius: 4px;
 }
-.jqueryFormulae li.formulea-item.operator a {
+.jqueryFormulae li.formulae-item.operator a {
   display: block;
   background: #f0f0f0;
   line-height: 34px;
@@ -20,16 +20,16 @@
   font-weight: bold;
   text-decoration: none;
 }
-.jqueryFormulae li.formulea-item.operator a:hover {
+.jqueryFormulae li.formulae-item.operator a:hover {
   background: gainsboro;
 }
-.jqueryFormulae li.formulea-item select,
-.jqueryFormulae li.formulea-item a.removelink {
+.jqueryFormulae li.formulae-item select,
+.jqueryFormulae li.formulae-item a.removelink {
   cursor: pointer;
 }
-.jqueryFormulae li.formulea-item ul.operator-overview {
+.jqueryFormulae li.formulae-item ul.operator-overview {
   padding: 0 0;
 }
-.jqueryFormulae li.formulea-item ul.operator-overview li {
+.jqueryFormulae li.formulae-item ul.operator-overview li {
   display: inline-block;
 }
