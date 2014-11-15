@@ -41,18 +41,18 @@ Add a select input form:
 
 ```
 $("#formula").jqueryFormulae({
-					inputs: [
-						{
-							'name':'sensors',
-							'class': 'sensorselect',
-							'type':'select',
-							'values': {
-								1 : {'label':'sensor1', 'value': 100},
-								2 : {'label':'sensor2', 'value': 200},
-								3 : {'label':'sensor3', 'value': 300},
-                                                        4: {'label': 'sensor4', 'value': 400}
-                                                    }
-                                                }
-                                            ]
-                                        });
+    inputs: [
+            {
+                    'name':'sensors',
+                    'class': 'sensorselect',
+                    'type':'select',
+                    'values': {
+                            1 : {'label':'sensor1', 'value': 100},
+                            2 : {'label':'sensor2', 'value': 200},
+                            3 : {'label':'sensor3', 'value': 300},
+                    4: {'label': 'sensor4', 'value': 400}
+                }
+            }
+        ]
+    });
 ```
