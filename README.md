@@ -5,7 +5,7 @@ Build formulas with jquery
 Small plugin for building formulas with your own depencies like sensor values. 
 You can add  multiple select options with integer values to build a formula on.
 
-[Check the demo!](roywcm.github.io/jqueryFormulae)
+[Check the demo!](http://roywcm.github.io/jqueryFormulae)
 
 Installation:
 Bower
