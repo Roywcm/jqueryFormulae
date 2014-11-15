@@ -112,10 +112,10 @@
             var html = "";
             switch (items) {
                 case "li":
-                    html = $("<li class=\"formulea-item\"></li>");
+                    html = $("<li class=\"formulae-item\"></li>");
                     break;
                 case "div":
-                    html = $("<div class=\"formulea-item\"></div>");
+                    html = $("<div class=\"formulae-item\"></div>");
                     break;
             }
             return html;
