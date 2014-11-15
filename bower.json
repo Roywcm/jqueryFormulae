@@ -12,9 +12,9 @@
     "formula",
     "builder"
   ],
-  "depencies": [
-      "bootstrap": "*"
-  ]
+  "depencies": {
+      "bootstrap": ">3.3.1"
+  },
   "license": "MIT",
   "ignore": [
     "**/.*",
