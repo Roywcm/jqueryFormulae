@@ -8,7 +8,7 @@ You can add  multiple select options with integer values to build a formula on.
 Installation:
 Bower
 ```
-bower install x-editable
+bower install jquery-formulae
 ```
 
 Add this in your project
@@ -29,7 +29,7 @@ Just ad a placeholder in your html like this:
 <div id="formulae"></div>
 ```
 
-Add formulea with this code:
+Add formulae with this code:
 
 ```
 $("#formulae").jqueryFormulae();
