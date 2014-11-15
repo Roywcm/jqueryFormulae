@@ -35,7 +35,7 @@
 					$.each(data, function(index,formula){
 						result = result + formula['value'];
 					});
-					console.log(eval(result));
+					$('pre').html(eval(result));
 				});
 			});
 		</script>
