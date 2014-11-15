@@ -12,7 +12,9 @@
                 border-radius: 4px;
                 a{
                     display: block;
-                    background: #f0f0f0;
+                    background: #5cb85c;
+                    color: white;
+                    border-radius: 100%;
                     line-height: 34px;
                     padding: 0 10px;
                     cursor: pointer;
@@ -26,14 +28,30 @@
 
             }
 
-            select,a.removelink {
+            a.removelink {
                 cursor: pointer;
+                color: #d9534f;
             }
             
             ul.operator-overview {
                 padding: 0 0;
                 li {
                     display: inline-block;
+                }
+            }
+            ul.action-overview {
+                padding: 0 0;
+                li {
+                    display: inline-block; 
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        padding: 10px;
+                        cursor: pointer;
+                        margin: 5px;
+                        border-radius: 4px;
+                        border: 3px solid #f0f0f0;
+                    }
                 }
             }
         }

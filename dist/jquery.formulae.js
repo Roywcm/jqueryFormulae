@@ -12,8 +12,8 @@
             defaults = {
                 wrapper: "<ul class=\"jqueryFormulae\"></ul>",
                 items: "li",
-                newMsg: "Selecteer actie",
-                removeicon: "glyphicon glyphicon-remove",
+                newMsg: "<span class=\"glyphicon glyphicon-plus\">",
+                removeicon: "glyphicon glyphicon-remove-circle",
                 popoverPlacement: "auto bottom",
                 inputs: {},
                 defaultinputs: [
