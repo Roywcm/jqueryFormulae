@@ -1,0 +1,35 @@
+{
+  "name": "jqueryFormulae",
+  "homepage": "https://github.com/Roywcm/jqueryFormulae",
+  "authors": [
+    "Roywcm <info@roywulms.nl>"
+  ],
+  "description": "Build formulas with jquery!",
+  "main": "dist/jquery.formulea.min.js",
+  "keywords": [
+    "Jquery",
+    "formula",
+    "builder"
+  ],
+  "depencies": {
+    "bootstrap": ">3.3.1"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "305cc78980",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "305cc78980d6300fc3112a7aa8c7e47e413227be"
+  },
+  "_source": "git://github.com/Roywcm/jqueryFormulae.git",
+  "_target": "*",
+  "_originalSource": "jquery-formulae",
+  "_direct": true
+}

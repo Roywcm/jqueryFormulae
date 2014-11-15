@@ -1,0 +1,26 @@
+{
+  "name": "jqueryFormulae",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Roywcm/jqueryFormulae",
+  "authors": [
+    "Roywcm <info@roywulms.nl>"
+  ],
+  "description": "Build formulas with jquery!",
+  "main": "dist/jquery.formulea.min.js",
+  "keywords": [
+    "Jquery",
+    "formula",
+    "builder"
+  ],
+  "depencies": {
+      "bootstrap": ">3.3.1"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
