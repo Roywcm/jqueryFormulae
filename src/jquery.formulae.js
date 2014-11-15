@@ -60,7 +60,7 @@
          */
         addAction: function () {
             var html, inputs;
-            html = $("<ul></ul>");
+            html = $("<ul></ul>").addClass("action-overview");
             inputs = $.merge(this.options.defaultinputs, this.options.inputs);
             $.each(inputs, $.proxy(function (i, input) {
                 var link = $("<a class=\"addAction\"></a>").html(input.name).on("click", $.proxy(function () {
