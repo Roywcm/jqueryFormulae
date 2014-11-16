@@ -57,7 +57,7 @@
         <div class="container">
             <div class="row">
                 <div class="page-header">
-                    <h1>Jquery Formulae <small>Build formula's with your own dependencies</small></h1>
+                    <h1>Jquery Formulae <small>Build formula's with your own static values!</small></h1>
                 </div>
                 <form id="test">
                     <div id="formula"></div>
@@ -71,37 +71,48 @@
             <div class="row">
             <div class="col-md-10 col-md-offset-1">
             	<div class="page-header">
+                    <h1>Download</h1>
+                </div>
+                <a class="btn btn-success" href="https://github.com/Roywcm/jqueryFormulae/zipball/master">Download (zip)</a>
+                
+                
+                <div class="page-header">
                     <h1>Installation and usage</h1>
                 </div>
             	
-<p>Small plugin for building formulas with your own depencies like sensor values. You can add multiple select options with integer values to build a formula on.</p>
+<p>Small plugin for building formulas with your own static values like sensor values or product prices. You can add multiple select options with integer values to build a formula on.</p>
 
-<p><strong>Installation: Bower</strong></p>
+<h3>Installation: Bower</h3>
 
 <pre><code>bower install jquery-formulae</code></pre>
 
-Add this in your project
+<h3>Add depencies</h3>
 
+<p><strong>Javascript</strong></p>
 <pre><code class="language-markup">
 	&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"&gt;&lt;script&gt;
 	&lt;script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"&gt;&lt;script&gt;
-	
-    &lt;script src="/path/to/formulae/dist/jquery.formulae.js"&gt;&lt;script&gt;
-
+	&lt;script src="/path/to/formulae/dist/jquery.formulae.js"&gt;&lt;script&gt;
+</code></pre>
+<p><strong>Stylesheets</strong></p>
+<pre><code class="language-markup">
 	&lt;link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"&gt;
 	&lt;link rel="stylesheet" type="text/css" href="src/jquery.formulae.css"  media='all'/&gt;
 </code></pre>
-Just ad a placeholder in your html like this:
+
+<h3>Setup Formulae</h3>
 
 <pre><code class="language-markup">
 	&lt;div id="formulae"&gt;&lt;/div&gt;
 </code></pre>
+
 Add formulae with this code:
 
 <pre><code class="language-javascript">
 	$("#formulae").jqueryFormulae();
 </code></pre>
-Options:
+
+<h3>Options:</h3>
 
 Add a select input form:
 <pre><code class="language-javascript">
@@ -121,6 +132,30 @@ Add a select input form:
 	    ]
 	});
 </code></pre>
+
+<h3>Defaults</h3>
+
+<pre><code class="language-javascript">
+    wrapper: "&lt;ul class=\"jqueryFormulae\">&lt;/ul&gt;",
+    items: "li",
+    newMsg: "&lt;span class=\"glyphicon glyphicon-plus\"&gt;",
+    removeicon: "glyphicon glyphicon-remove-circle",
+    popoverPlacement: "auto bottom",
+    inputs: {},
+    defaultinputs: [
+        {
+            "name": "custom",
+            "type": "number",
+            "class": "custom"
+        }
+    ],
+    math: [
+        {"label": "&lt;span class=\"glyphicon glyphicon-plus\"&gt;&lt;/span&gt;", "value": "+"},
+        {"label": "&lt;span class=\"glyphicon glyphicon-minus\"&gt;&lt;/span&gt;", "value": "-"},
+        {"label": "&lt;span class=\"glyphicon glyphicon-remove\"&gt;&lt;/span&gt;", "value": "*"}
+    ]
+</code></pre>
+
             </div>
             </div>
         </div>
