@@ -1,6 +1,6 @@
 /*
  *  jQuery formulae - v0.0.1
- *  Build formula's with your own values.
+ *  Build formula's with static values.
  *  #
  *
  *  Made by Roy Wulms

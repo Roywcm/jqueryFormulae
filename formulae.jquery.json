@@ -1,7 +1,7 @@
 {
 	"name": "formulae",
 	"title": "jQuery formulae",
-	"description": "Build formula's with your own values.",
+	"description": "Build formula's with static values.",
 	"keywords": [
 		"jquery",
 		"bootstrap",
