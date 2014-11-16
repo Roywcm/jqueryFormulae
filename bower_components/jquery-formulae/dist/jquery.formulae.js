@@ -1,6 +1,6 @@
 /*
  *  jQuery formulae - v0.0.1
- *  Build formula's with your own values.
+ *  Build formula's with static values.
  *  #
  *
  *  Made by Roy Wulms
@@ -26,7 +26,9 @@
                 math: [
                     {"label": "<span class=\"glyphicon glyphicon-plus\"></span>", "value": "+"},
                     {"label": "<span class=\"glyphicon glyphicon-minus\"></span>", "value": "-"},
-                    {"label": "<span class=\"glyphicon glyphicon-remove\"></span>", "value": "*"}
+                    {"label": "<span class=\"glyphicon glyphicon-remove\"></span>", "value": "*"},
+                    {"label": "(", "value": "("},
+                    {"label": ")", "value": ")"}
                 ]
             };
 
