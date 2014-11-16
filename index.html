@@ -14,14 +14,14 @@
                 $("#formula").jqueryFormulae({
                     inputs: [
                         {
-                            'name': 'sensors',
-                            'class': 'sensorselect',
-                            'type': 'select',
+                            'name':'Discounts',
+                            'class': 'discounts',
+                            'type':'select',
                             'values': {
-                                1: {'label': 'sensor1', 'value': 100},
-                                2: {'label': 'sensor2', 'value': 200},
-                                3: {'label': 'sensor3', 'value': 300},
-                                4: {'label': 'sensor4', 'value': 400}
+                                1 : {'label':'discount 1 (&#8364; 100,-)', 'value': 100},
+                                2 : {'label':'discount 2 (&#8364; 200,-)', 'value': 200},
+                                3 : {'label':'discount 3 (&#8364; 300,-)', 'value': 300},
+                                4 : {'label':'discount 4 (&#8364; 400,-)', 'value': 400}
                             }
                         },
                         {
@@ -80,7 +80,7 @@
                     <h1>Installation and usage</h1>
                 </div>
             	
-<p>Small plugin for building formulas with your own static values like sensor values or product prices. You can add multiple select options with integer values to build a formula on.</p>
+<p class="lead">Small plugin for building formulas with your own static values like sensor values or product prices. You can add multiple select options with integer values to build a formula on.</p>
 
 <h3>Installation: Bower</h3>
 
@@ -119,14 +119,14 @@ Add a select input form:
 	$("#formula").jqueryFormulae({
 	    inputs: [
 	        {
-	            'name':'sensors',
-	            'class': 'sensorselect',
+	            'name':'Discounts',
+	            'class': 'discounts',
 	            'type':'select',
 	            'values': {
-	                1 : {'label':'sensor1', 'value': 100},
-	                2 : {'label':'sensor2', 'value': 200},
-	                3 : {'label':'sensor3', 'value': 300},
-	                4: {'label': 'sensor4', 'value': 400}
+	                1 : {'label':'discount 1 (&#8364; 100,-)', 'value': 100},
+                        2 : {'label':'discount 2 (&#8364; 200,-)', 'value': 200},
+                        3 : {'label':'discount 3 (&#8364; 300,-)', 'value': 300},
+                        4 : {'label':'discount 4 (&#8364; 400,-)', 'value': 400}
 	            }
 	        }
 	    ]
