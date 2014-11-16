@@ -18,7 +18,9 @@
                 math: [
                     {"label": "<span class=\"glyphicon glyphicon-plus\"></span>", "value": "+"},
                     {"label": "<span class=\"glyphicon glyphicon-minus\"></span>", "value": "-"},
-                    {"label": "<span class=\"glyphicon glyphicon-remove\"></span>", "value": "*"}
+                    {"label": "<span class=\"glyphicon glyphicon-remove\"></span>", "value": "*"},
+                    {"label": "(", "value": "("},
+                    {"label": ")", "value": ")"}
                 ]
             };
 
