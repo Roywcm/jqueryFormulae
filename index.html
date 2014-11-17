@@ -23,8 +23,8 @@
         <script>
             $(function () {
                 $("#formula").jqueryFormulae({
-                    inputs: [
-                        {
+                    inputs: {
+                        "shipping": {
                             'name':'Shipping',
                             'class': 'shipping',
                             'type':'select',
@@ -35,7 +35,7 @@
                                 4 : {'label':'Shipping 4 (&#8364; 40,-)', 'value': 40}
                             }
                         },
-                        {
+                        "products": {
                             'name': 'Products',
                             'class': 'products',
                             'type': 'select',
@@ -46,7 +46,7 @@
                                 4: {'label': 'Jewelry', 'value': 289}
                             }
                         }
-                    ]
+                    }
                 });
 
                 // calculate script. 
@@ -129,8 +129,8 @@ Add formulae with this code:
 Add a select input form:
 <pre><code class="language-javascript">
 	$("#formula").jqueryFormulae({
-	    inputs: [
-	        {
+	    inputs: {
+	        "shipping": {
 	            'name':'Shipping',
 	            'class': 'shipping',
 	            'type':'select',
@@ -141,7 +141,7 @@ Add a select input form:
                         4 : {'label':'Shipping 4 (&#8364; 40,-)', 'value': 40}
 	            }
 	        }
-	    ]
+	    }
 	});
 </code></pre>
 
