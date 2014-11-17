@@ -25,7 +25,7 @@
                 $("#formula").jqueryFormulae({
                     inputs: {
                         "shipping": {
-                            'name':'Shipping',
+                            'label':'Shipping',
                             'class': 'shipping',
                             'type':'select',
                             'values': {
@@ -36,7 +36,7 @@
                             }
                         },
                         "products": {
-                            'name': 'Products',
+                            'label': 'Products',
                             'class': 'products',
                             'type': 'select',
                             'values': {
@@ -131,7 +131,7 @@ Add a select input form:
 	$("#formula").jqueryFormulae({
 	    inputs: {
 	        "shipping": {
-	            'name':'Shipping',
+	            'label':'Shipping',
 	            'class': 'shipping',
 	            'type':'select',
 	            'values': {
@@ -154,13 +154,13 @@ Add a select input form:
     removeicon: "glyphicon glyphicon-remove-circle",
     popoverPlacement: "auto bottom",
     inputs: {},
-    defaultinputs: [
-        {
+    defaultinputs: {
+        "number": {
             "name": "custom",
             "type": "number",
             "class": "custom"
         }
-    ],
+    },
     math: [
         {"label": "&lt;span class=\"glyphicon glyphicon-plus\"&gt;&lt;/span&gt;", "value": "+"},
         {"label": "&lt;span class=\"glyphicon glyphicon-minus\"&gt;&lt;/span&gt;", "value": "-"},
