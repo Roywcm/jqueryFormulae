@@ -8,13 +8,13 @@
                 removeicon: "glyphicon glyphicon-remove-circle",
                 popoverPlacement: "auto bottom",
                 inputs: {},
-                defaultinputs: [
-                    {
+                defaultinputs: {
+                    "number": {
                         "name": "custom",
                         "type": "number",
                         "class": "custom"
                     }
-                ],
+                },
                 math: [
                     {"label": "<span class=\"glyphicon glyphicon-plus\"></span>", "value": "+"},
                     {"label": "<span class=\"glyphicon glyphicon-minus\"></span>", "value": "-"},
@@ -64,7 +64,7 @@
             html = $("<ul></ul>").addClass("action-overview");
             inputs = $.merge(this.options.defaultinputs, this.options.inputs);
             $.each(inputs, $.proxy(function (i, input) {
-                var link = $("<a class=\"addAction\"></a>").html(input.name).on("click", $.proxy(function () {
+                var link = $("<a class=\"addAction\"></a>").html(input.label).on("click", $.proxy(function () {
                     $(this.newlink).popover("hide");
                     if (this.wrapper.children("li").length > 1) {
                         $(this.newlink).parent(this.options.items).before(this.mathBuilder());
