@@ -10,7 +10,7 @@
                 inputs: {},
                 defaultinputs: {
                     "number": {
-                        "name": "custom",
+                        "label": "custom",
                         "type": "number",
                         "class": "custom"
                     }
@@ -62,7 +62,7 @@
         addAction: function () {
             var html, inputs;
             html = $("<ul></ul>").addClass("action-overview");
-            inputs = $.merge(this.options.defaultinputs, this.options.inputs);
+            inputs = $.extend({},this.options.defaultinputs, this.options.inputs);
             $.each(inputs, $.proxy(function (i, input) {
                 var link = $("<a class=\"addAction\"></a>").html(input.label).on("click", $.proxy(function () {
                     $(this.newlink).popover("hide");
