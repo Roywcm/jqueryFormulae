@@ -26,6 +26,7 @@
                     inputs: {
                         "shipping": {
                             'label':'Shipping',
+                            'name':'shipping',
                             'class': 'shipping',
                             'type':'select',
                             'values': {
@@ -37,6 +38,7 @@
                         },
                         "products": {
                             'label': 'Products',
+                            'name':'products',
                             'class': 'products',
                             'type': 'select',
                             'values': {
@@ -131,16 +133,29 @@ Add a select input form:
 	$("#formula").jqueryFormulae({
 	    inputs: {
 	        "shipping": {
-	            'label':'Shipping',
-	            'class': 'shipping',
-	            'type':'select',
-	            'values': {
-	                1 : {'label':'Shipping 1 (&#8364; 10,-)', 'value': 10},
+                    'label':'Shipping',
+                    'name':'shipping',
+                    'class': 'shipping',
+                    'type':'select',
+                    'values': {
+                        1 : {'label':'Shipping 1 (&#8364; 10,-)', 'value': 10},
                         2 : {'label':'Shipping 2 (&#8364; 20,-)', 'value': 20},
                         3 : {'label':'Shipping 3 (&#8364; 30,-)', 'value': 30},
                         4 : {'label':'Shipping 4 (&#8364; 40,-)', 'value': 40}
-	            }
-	        }
+                    }
+                },
+                "products": {
+                    'label': 'Products',
+                    'name':'products',
+                    'class': 'products',
+                    'type': 'select',
+                    'values': {
+                        1: {'label': 'T-shirt', 'value': 20.5},
+                        2: {'label': 'Sweater', 'value': 49.9},
+                        3: {'label': 'Pants', 'value': 80},
+                        4: {'label': 'Jewelry', 'value': 289}
+                    }
+                }
 	    }
 	});
 </code></pre>
@@ -153,6 +168,7 @@ Add a select input form:
     newMsg: "&lt;span class=\"glyphicon glyphicon-plus\"&gt;",
     removeicon: "glyphicon glyphicon-remove-circle",
     popoverPlacement: "auto bottom",
+    keyname: "math",
     inputs: {},
     defaultinputs: {
         "number": {
