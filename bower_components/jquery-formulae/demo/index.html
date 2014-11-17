@@ -12,9 +12,10 @@
         <script>
             $(function () {
                 $("#formula").jqueryFormulae({
-                    inputs: [
-                        {
-                            'name': 'sensors',
+                    inputs: {
+                        "sensors":{
+                            'label': 'sensors',
+                            'name':'sensors',
                             'class': 'sensorselect',
                             'type': 'select',
                             'values': {
@@ -24,8 +25,9 @@
                                 4: {'label': 'sensor4', 'value': 400}
                             }
                         },
-                        {
-                            'name': 'Product prices',
+                        "pricing":{
+                            'label': 'Product prices',
+                            'name':'pricing',
                             'class': 'sensorselect',
                             'type': 'select',
                             'values': {
@@ -35,7 +37,7 @@
                                 4: {'label': 'Jewelry', 'value': 289}
                             }
                         }
-                    ]
+                    }
                 });
 
                 // calculate script. 

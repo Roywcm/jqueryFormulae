@@ -7,10 +7,12 @@
                 newMsg: "<span class=\"glyphicon glyphicon-plus\">",
                 removeicon: "glyphicon glyphicon-remove-circle",
                 popoverPlacement: "auto bottom",
+                keyname: "math",
                 inputs: {},
                 defaultinputs: {
                     "number": {
                         "label": "custom",
+                        "name":"number",
                         "type": "number",
                         "class": "custom"
                     }
@@ -133,10 +135,10 @@
             inputhtml = "";
             switch (element.type) {
                 case "number":
-                    inputhtml = $("<input class=\"form-control\" type=\"number\" name=\"math[value]\"></input>");
+                    inputhtml = $("<input class=\"form-control\" type=\"number\" name=\""+this.options.keyname+"["+element.name+"]\"></input>");
                     break;
                 case "select":
-                    inputhtml = $("<select class=\"form-control\" name=\"math[value]\"></select>");
+                    inputhtml = $("<select class=\"form-control\" name=\""+this.options.keyname+"["+element.name+"]\"></select>");
                     $.each(element.values, function (i, option) {
                         var optionTemplate = $("<option></option>").attr("value", option.value).html(option.label);
                         inputhtml.append(optionTemplate);

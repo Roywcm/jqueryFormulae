@@ -22,11 +22,11 @@
     "test",
     "tests"
   ],
-  "_release": "0082ee83f0",
+  "_release": "53676329d3",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "0082ee83f0232c888d51026e6ab78b107e9a30fd"
+    "commit": "53676329d30751d1911f9b75ba494548c0805cfa"
   },
   "_source": "git://github.com/Roywcm/jqueryFormulae.git",
   "_target": "*",
