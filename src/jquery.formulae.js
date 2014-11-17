@@ -46,7 +46,7 @@
         createBuilder: function () {
             //var items = $(this.options.items);
             var items = this.itemsBuilder(this.options.items);
-            this.newlink = $("<a href=\"#\" class=\"btn btn-default\">" + this.options.newMsg + "</a>")
+            this.newlink = $("<a class=\"btn btn-default\">" + this.options.newMsg + "</a>")
                     .popover({
                         html: true,
                         placement: this.options.popoverPlacement,
