@@ -16,13 +16,13 @@
                 removeicon: "glyphicon glyphicon-remove-circle",
                 popoverPlacement: "auto bottom",
                 inputs: {},
-                defaultinputs: [
-                    {
+                defaultinputs: {
+                    "number": {
                         "name": "custom",
                         "type": "number",
                         "class": "custom"
                     }
-                ],
+                },
                 math: [
                     {"label": "<span class=\"glyphicon glyphicon-plus\"></span>", "value": "+"},
                     {"label": "<span class=\"glyphicon glyphicon-minus\"></span>", "value": "-"},
@@ -54,7 +54,7 @@
         createBuilder: function () {
             //var items = $(this.options.items);
             var items = this.itemsBuilder(this.options.items);
-            this.newlink = $("<a href=\"#\" class=\"btn btn-default\">" + this.options.newMsg + "</a>")
+            this.newlink = $("<a class=\"btn btn-default\">" + this.options.newMsg + "</a>")
                     .popover({
                         html: true,
                         placement: this.options.popoverPlacement,
@@ -72,7 +72,7 @@
             html = $("<ul></ul>").addClass("action-overview");
             inputs = $.merge(this.options.defaultinputs, this.options.inputs);
             $.each(inputs, $.proxy(function (i, input) {
-                var link = $("<a class=\"addAction\"></a>").html(input.name).on("click", $.proxy(function () {
+                var link = $("<a class=\"addAction\"></a>").html(input.label).on("click", $.proxy(function () {
                     $(this.newlink).popover("hide");
                     if (this.wrapper.children("li").length > 1) {
                         $(this.newlink).parent(this.options.items).before(this.mathBuilder());
