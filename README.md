@@ -2,6 +2,8 @@ Installation and usage
 ======================
 Small plugin for building formulas with your own static values like product and shipping pricing. You can add multiple select options with integer values to build a formula on.
 
+checkout the demo: http://roywcm.github.io/jqueryFormulae/
+
 Installation: Bower
 ===================
 ```
